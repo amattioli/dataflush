@@ -1,0 +1,32 @@
+<assembly>
+	<id>dataflush</id>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<formats>
+		<format>zip</format>
+	</formats>
+	 
+	<fileSets>
+	    <fileSet>
+	      <directory>src/main/scripts</directory>
+	      <outputDirectory>/bin</outputDirectory>
+		</fileSet>
+	</fileSets>
+	
+	<files>
+		<file>
+			<source>license.txt</source>
+			<outputDirectory>/</outputDirectory>
+		</file>
+		<file>
+			<source>readme.txt</source>
+			<outputDirectory>/</outputDirectory>
+		</file>
+	</files>
+	 
+	<dependencySets>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+        </dependencySet>
+    </dependencySets>
+
+</assembly>

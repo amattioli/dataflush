@@ -1,0 +1,13 @@
+#
+FROM CSV
+fileName: src/test/resources/it/amattioli/dataflush/cli/source.csv
+headers: true
+delimiter: ;
+#
+TO CSV
+fileName: target/dest.csv
+headers: true
+delimiter: ,
+#
+COLUMN col1 => (1) name:dest1
+COLUMN col2 => (0) name:dest2

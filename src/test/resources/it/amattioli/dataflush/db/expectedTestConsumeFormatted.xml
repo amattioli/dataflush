@@ -1,0 +1,7 @@
+<dataset>
+	<my_table col1="NULL"
+	          col2="NULL"
+	          col3="123.45"
+	          col4="1970-04-04"
+	          col5="NULL"/>
+</dataset>

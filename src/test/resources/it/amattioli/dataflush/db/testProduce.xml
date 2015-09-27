@@ -1,0 +1,4 @@
+<dataset>
+	<my_table col1="FirstValue"
+	          col2="SecondValue"/>
+</dataset>
