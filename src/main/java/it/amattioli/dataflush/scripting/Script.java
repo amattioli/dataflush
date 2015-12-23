@@ -9,6 +9,7 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import it.amattioli.dataflush.text.TextConsumer;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.commons.beanutils.Converter;
@@ -141,6 +142,8 @@ public class Script {
 			return new CsvConsumer();
 		} else if (line.endsWith("DATABASE")) {
 			return new DbConsumer();
+		} else if (line.endsWith("TEXT")) {
+			return new TextConsumer();
 		} else if (line.endsWith("FIXED WIDTH")) {
 			return new FixedWidthConsumer();
 		} else {
